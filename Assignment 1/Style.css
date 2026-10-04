@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8FAFC;
+    color: #1F2937;
+}
+
+h2 {
+    color: #163A5F;
+    border-bottom: 2px solid #2563EB;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.header {
+    width: 100%;
+    background-color: #163A5F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.Profile {
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    align-items: center;
+}
+
+
+.Profile-Image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+
+.text-box {
+    width: 70%;
+    padding: 20px;
+}
+
+
+.image-box {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.About {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #CBD5E1;
+}
+
+
+.Education {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #CBD5E1;
+}
+
+
+.Education-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Education-table tr:nth-child(2n) td {
+    padding-bottom: 20px;
+}
+
+.Education-table td:last-child {
+    text-align: right;
+}
+
+
+.Projects {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #CBD5E1;
+}
+
+
+.Skills {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #CBD5E1;
+}
+
+.Interests {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #CBD5E1;
+}
+
+
+.Language {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #CBD5E1;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #163A5F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
