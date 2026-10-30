@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savy Thrift | Thrift Smart. Dress Different.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="announcement">
+        PRE-LOVED STYLE. FRESH FINDS. EVERY DAY.
+    </div>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/logo.png" alt="Savy Thrift logo">
+                </a>
+                <input type="checkbox" id="nav-toggle" class="nav-check">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</label>
+                <div class="nav-links">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="#collection">Shop All</a>
+                    <a href="#categories">Categories</a>
+                    <a href="product.html">Featured Item</a>
+                    <span class="cart-icon" aria-label="Shopping cart">🛒 <small>0</small></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <span class="eyebrow">CURATED SECONDHAND FASHION</span>
+                    <h1>OLD CLOTHES.<br><em>NEW ENERGY.</em></h1>
+                    <p>
+                        One-of-a-kind pieces, timeless streetwear
+                        and everyday essentials.
+                        Give great style another life.
+                    </p>
+                    <a class="btn btn-lime" href="#collection">EXPLORE THE DROP ↗</a>
+                </div>
+                <div class="hero-photo" role="img" aria-label="Vintage streetwear fashion"></div>
+            </div>
+        </section>
+        <section class="perks">
+            <div class="container d-flex flex-wrap justify-content-center gap-3 gap-md-5">
+                <span>✦ Curated Finds</span>
+                <span>✦ Affordable Style</span>
+                <span>✦ Sustainable Fashion</span>
+                <span>✦ Nationwide Delivery</span>
+            </div>
+        </section>
+        <section class="section container" id="categories">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">FIND YOUR VIBE</span>
+                    <h2>SHOP BY STYLE <span class="green-dot">.</span></h2>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-4">
+                    <a href="#collection" class="category category-one">
+                        <span>HOODIES & SWEATS ↗</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4">
+                    <a href="#collection" class="category category-two">
+                        <span>VINTAGE TEES ↗</span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="#collection" class="category category-three">
+                        <span>JACKETS & LAYERS ↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section container" id="collection">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">HANDPICKED FOR YOU</span>
+                    <h2>THE LATEST DROP <span class="green-dot">.</span></h2>
+                </div>
+                <span class="collection-count">8 UNIQUE FINDS</span>
+            </div>
+            <div class="filter-section">
+                <h3>FILTER BY CATEGORY</h3>
+                <div class="filter-options">
+                    <input type="radio" name="category" id="filter-all" value="all" checked>
+                    <label for="filter-all">All</label>
+                    <input type="radio" name="category" id="filter-tops" value="tops">
+                    <label for="filter-tops">Tops</label>
+                    <input type="radio" name="category" id="filter-bottoms" value="bottoms">
+                    <label for="filter-bottoms">Bottoms</label>
+                    <input type="radio" name="category" id="filter-outerwear" value="outerwear">
+                    <label for="filter-outerwear">Outerwear</label>
+                </div>
+                <div class="product-controls">
+                    <input type="search" id="search-input" placeholder="Search products..." aria-label="Search products">
+                    <button type="button" id="sort-btn">Sort by Price ↕</button>
+                </div>
+                <p id="no-products" hidden>No products found</p>
+                <div class="row g-3 g-lg-4" id="product-grid">
+                    <div class="col-6 col-md-4 col-lg-3 product-item" data-category="tops">
+                        <article class="product-card">
+                            <a href="product.html" class="product-image">
+                                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=650&q=85" alt="Vintage Washed Hoodie" loading="lazy">
+                                <span class="badge-tag">ONE OF ONE</span>
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">PRE-LOVED / GREAT CONDITION</span>
+                                <a class="product-name" href="product.html">Vintage Washed Hoodie</a>
+                                <div class="price">Rs. 2,450</div>
+                                <button type="button" class="add-btn">ADD TO CART +</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 product-item" data-category="tops">
+                        <article class="product-card">
+                            <a href="product.html" class="product-image">
+                                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=650&q=85" alt="Retro Graphic Tee" loading="lazy">
+                                <span class="badge-tag">ONE OF ONE</span>
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">PRE-LOVED / GREAT CONDITION</span>
+                                <a class="product-name" href="product.html">Retro Graphic Tee</a>
+                                <div class="price">Rs. 1,350</div>
+                                <button type="button" class="add-btn">ADD TO CART +</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 product-item" data-category="outerwear">
+                        <article class="product-card">
+                            <a href="product.html" class="product-image">
+                                <img src="https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=650&q=85" alt="Classic Denim Jacket" loading="lazy">
+                                <span class="badge-tag">ONE OF ONE</span>
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">PRE-LOVED / GREAT CONDITION</span>
+                                <a class="product-name" href="product.html">Classic Denim Jacket</a>
+                                <div class="price">Rs. 3,200</div>
+                                <button type="button" class="add-btn">ADD TO CART +</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 product-item" data-category="bottoms">
+                        <article class="product-card">
+                            <a href="product.html" class="product-image">
+                                <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=650&q=85" alt="Relaxed Cargo Pants" loading="lazy">
+                                <span class="badge-tag">ONE OF ONE</span>
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">PRE-LOVED / GREAT CONDITION</span>
+                                <a class="product-name" href="product.html">Relaxed Cargo Pants</a>
+                                <div class="price">Rs. 2,150</div>
+                                <button type="button" class="add-btn">ADD TO CART +</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 product-item" data-category="tops">
+                        <article class="product-card">
+                            <a href="product.html" class="product-image">
+                                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=650&q=85" alt="Oversized Black Tee" loading="lazy">
+                                <span class="badge-tag">ONE OF ONE</span>
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">PRE-LOVED / GREAT CONDITION</span>
+                                <a class="product-name" href="product.html">Oversized Black Tee</a>
+                                <div class="price">Rs. 1,250</div>
+                                <button type="button" class="add-btn">ADD TO CART +</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 product-item" data-category="tops">
+                        <article class="product-card">
+                            <a href="product.html" class="product-image">
+                                <img src="https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=650&q=85" alt="Vintage Flannel Shirt" loading="lazy">
+                                <span class="badge-tag">ONE OF ONE</span>
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">PRE-LOVED / GREAT CONDITION</span>
+                                <a class="product-name" href="product.html">Vintage Flannel Shirt</a>
+                                <div class="price">Rs. 1,750</div>
+                                <button type="button" class="add-btn">ADD TO CART +</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 product-item" data-category="tops">
+                        <article class="product-card">
+                            <a href="product.html" class="product-image">
+                                <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=650&q=85" alt="Everyday Knit Sweater" loading="lazy">
+                                <span class="badge-tag">ONE OF ONE</span>
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">PRE-LOVED / GREAT CONDITION</span>
+                                <a class="product-name" href="product.html">Everyday Knit Sweater</a>
+                                <div class="price">Rs. 2,100</div>
+                                <button type="button" class="add-btn">ADD TO CART +</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 product-item" data-category="outerwear">
+                        <article class="product-card">
+                            <a href="product.html" class="product-image">
+                                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=650&q=85" alt="Streetwear Windbreaker" loading="lazy">
+                                <span class="badge-tag">ONE OF ONE</span>
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">PRE-LOVED / GREAT CONDITION</span>
+                                <a class="product-name" href="product.html">Streetwear Windbreaker</a>
+                                <div class="price">Rs. 2,950</div>
+                                <button type="button" class="add-btn">ADD TO CART +</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-banner">
+            <div class="container">
+                <span class="eyebrow">MORE THAN JUST FASHION</span>
+                <h2>GOOD STYLE DESERVES<br><em>A SECOND CHANCE.</em></h2>
+                <a href="#collection" class="btn btn-lime">SHOP THE COLLECTION ↗</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-5">
+                    <a href="index.html">
+                        <img class="footer-logo" src="assets/logo.png" alt="Savy Thrift">
+                    </a>
+                    <p>Thoughtfully curated thrift fashion for people who dress differently.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3>EXPLORE</h3>
+                    <a href="index.html">Home</a>
+                    <a href="#collection">Shop All</a>
+                    <a href="product.html">Product Details</a>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3>GET IN TOUCH</h3>
+                    <p>Pakistan · Nationwide delivery</p>
+                    <p>Fresh drops. Better fits. Less waste.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 SAVY THRIFT. ALL RIGHTS RESERVED.
+                <span>THRIFT SMART. DRESS DIFFERENT.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
